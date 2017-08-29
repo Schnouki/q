@@ -9,6 +9,9 @@ import re
 import sys
 import unittest
 
+if not hasattr(unittest, "skipIf"):
+    import unittest2 as unittest
+
 qpath = os.path.abspath(os.path.join(os.path.split(__file__)[0], '..'))
 sys.path.insert(0, qpath)
 

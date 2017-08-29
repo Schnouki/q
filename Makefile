@@ -9,6 +9,7 @@ deps:
 	# These dependencies are only needed for development.
 	pip install pep8
 	pip install wheel
+	pip install unittest2
 
 pep8:
 	@echo === Running pep8 on files
